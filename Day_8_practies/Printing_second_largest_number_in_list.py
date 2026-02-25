@@ -1,10 +1,12 @@
 def printsec(l):
     n = len(l)
     curren = 0
+    index = 1
     for i in range(0 , n):
         
-        if l[i] < l[i + 1]:
-            curren += l[i + 1]
+        if l[i] < l[index]:
+            curren += l[index]
+        index += 1
     return curren
 
 
